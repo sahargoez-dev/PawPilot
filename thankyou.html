@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — PawPilot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-orange-100 via-white to-orange-50 flex flex-col items-center justify-center min-h-screen text-center text-gray-800 px-6">
+  <div class="max-w-md">
+    <img src="images/hero.png" alt="Happy dog" class="rounded-2xl shadow-lg mb-8 mx-auto border-4 border-orange-400" />
+    <h1 class="text-4xl font-extrabold text-orange-600">Thank You!</h1>
+    <p class="mt-4 text-lg text-gray-700">Thank you for filling out the form 💬<br>We’ll review your details and get in touch soon!</p>
+    <a href="index.html" class="inline-block mt-8 rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white shadow hover:bg-orange-400 transition">← Back to Home</a>
+  </div>
+  <footer class="mt-16 text-sm text-gray-500">© <span id="year"></span> PawPilot. All rights reserved.</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
